@@ -1,0 +1,91 @@
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ["var(--font-sans)", "system-ui", "sans-serif"],
+        serif: ["var(--font-serif)", "Georgia", "serif"],
+      },
+      colors: {
+        plum: {
+          DEFAULT: "#524660",
+          50:  "#F4F1F6",
+          100: "#E3DDE9",
+          200: "#C7BAD3",
+          300: "#A897BD",
+          400: "#8B74A6",
+          500: "#6E5490",
+          600: "#5A4578",
+          700: "#524660",
+          800: "#3D3349",
+          900: "#282232",
+        },
+        mauve: {
+          DEFAULT: "#9F8383",
+          50:  "#F7F3F3",
+          100: "#EDE4E4",
+          200: "#DBCACA",
+          300: "#C9AFAF",
+          400: "#B79595",
+          500: "#9F8383",
+          600: "#8A6E6E",
+          700: "#705858",
+          800: "#564242",
+          900: "#3C2D2D",
+        },
+        blush: {
+          DEFAULT: "#CEAEB0",
+          50:  "#FDF8F8",
+          100: "#F7EEEF",
+          200: "#EEDCDD",
+          300: "#DCBFC1",
+          400: "#CEAEB0",
+          500: "#BC9799",
+          600: "#A67F82",
+          700: "#8A686A",
+          800: "#6E5153",
+          900: "#523B3C",
+        },
+        cream: {
+          DEFAULT: "#FDDCB0",
+          50:  "#FFFDF9",
+          100: "#FEF6EC",
+          200: "#FEECD6",
+          300: "#FDDCB0",
+          400: "#FCC880",
+          500: "#FAB24F",
+          600: "#F89C1F",
+          700: "#D07F0A",
+          800: "#9E5F07",
+          900: "#6C4005",
+        },
+        warm: {
+          50:  "#FDFCFB",
+          100: "#F8F5F2",
+          200: "#EDE8E3",
+          300: "#DDD5CE",
+          400: "#C4B8B0",
+          500: "#A89890",
+          600: "#8C7B72",
+          700: "#6E6058",
+          800: "#504540",
+          900: "#322C28",
+        },
+      },
+      boxShadow: {
+        "card": "0 1px 3px rgba(82,70,96,0.06), 0 4px 12px rgba(82,70,96,0.04)",
+        "card-hover": "0 4px 16px rgba(82,70,96,0.12), 0 1px 4px rgba(82,70,96,0.08)",
+        "plum": "0 4px 20px rgba(82,70,96,0.25)",
+      },
+    },
+  },
+  plugins: [],
+};
+
+export default config;
